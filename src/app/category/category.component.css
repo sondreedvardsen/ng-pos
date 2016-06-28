@@ -1,0 +1,26 @@
+md-card img {
+    height: 120px;
+    object-fit: cover;
+}
+.md-cart {
+    position: relative;
+}
+md-icon {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+    left: 0;
+    font-size: 64px;
+    color: #757575;
+}
+md-card-title {
+    font-size: 18px;
+    height: 62px;
+    overflow: hidden;
+    text-align: center;
+}
+md-card-content {
+    text-align: center;
+    margin-bottom: 0px;
+}
