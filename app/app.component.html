@@ -1,0 +1,88 @@
+<md-sidenav-layout fullscreen>
+    <md-sidenav #sidenav>
+        <md-nav-list>
+            <a md-list-item>
+                <md-icon md-list-icon>play_arrow</md-icon>
+                <span md-line>Start kassasalg</span>
+            </a>
+            <a md-list-item>
+                <md-icon md-list-icon>stop</md-icon>
+                <span md-line>Stop kassasalg</span>
+            </a>
+            <a md-list-item>
+                <md-icon md-list-icon>print</md-icon>
+                <span md-line>Kvitteringsutskrift</span>
+            </a>
+            <a md-list-item>
+                <md-icon md-list-icon>settings</md-icon>
+                <span md-line>Innstillinger</span>
+            </a>
+            <a md-list-item>
+                <md-icon md-list-icon>power_settings_new</md-icon>
+                <span md-line>Logg ut</span>
+            </a>
+        </md-nav-list>
+    </md-sidenav>
+    <md-toolbar color="primary">
+        <button md-icon-button (click)="sidenav.open()">
+            <md-icon>menu</md-icon>
+        </button>
+        <button md-icon-button>
+            <md-icon>search</md-icon>
+        </button>
+        <button md-icon-button>
+            <md-icon>keyboard</md-icon>
+        </button>
+        <button md-icon-button>
+            <md-icon>receipt</md-icon>
+        </button>
+    </md-toolbar>
+    <md-tab-group>
+        <md-tab>
+            <template md-tab-label>Home</template>
+            <template md-tab-content>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <md-card>
+                            <img md-card-image src="http://www.woroom.no/users/woroom_mystore_no/images/26315_MUUTO_Muuto_-_Rest_Sofa_3_seter_-_Dark_grey__1.jpg">
+                            <md-card-title>Testprod</md-card-title>
+                            <md-card-content>6995,-</md-card-content>
+                            <md-card-actions align="end">
+                                <button md-button color="primary">Produktinfo</button>
+                            </md-card-actions>
+                        </md-card>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <md-card>
+                            <img md-card-image src="http://www.woroom.no/users/woroom_mystore_no/images/27169_MUUTO_Mini_Stacked_-_Modul_1__1.jpg">
+                            <md-card-title>Testprodukt med langt navn</md-card-title>
+                            <md-card-content>9995,-</md-card-content>
+                            <md-card-actions align="end">
+                                <button md-button color="primary">Produktinfo</button>
+                            </md-card-actions>
+                        </md-card>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <md-card></md-card>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <md-card></md-card>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <md-card></md-card>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <md-card></md-card>
+                    </div>
+                </div>
+            </template>
+        </md-tab>
+        <div *ngFor="let cat of categories">
+            <md-tab *ngIf="cat.type == 'parent'">
+                <template md-tab-label>{{cat.name}}<a [routerLink]="['/category/', cat.id]"></a></template>
+            </md-tab>
+        </div>
+    </md-tab-group>
+    <router-outlet></router-outlet>
+</md-sidenav-layout>
+<app-cart></app-cart>

@@ -1,0 +1,13 @@
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--3-col" *ngFor="let product of products">
+        <md-card>
+            <img md-card-image src="{{product.products_images[0]}}">
+            <md-icon *ngIf="!product.products_images">photo</md-icon>
+            <md-card-title>{{product.products_name}}</md-card-title>
+            <md-card-content>{{product.products_price_ex_tax * product.products_tax_percentage + ',-'}}</md-card-content>
+            <md-card-actions align="center">
+                <button md-button color="primary">Produktinfo</button>
+            </md-card-actions>
+        </md-card>
+    </div>
+</div>

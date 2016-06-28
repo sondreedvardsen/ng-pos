@@ -1,0 +1,30 @@
+:host {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 310px;
+    height: 100%;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.top {
+    position: relative;
+}
+.top button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h4 {
+    margin: 0;
+    text-align: center;
+}
+md-icon {
+    color: #757575;
+}
+.btn button {
+    background: transparent;
+    width: 100%;
+}
+.btn md-icon {
+    vertical-align: middle;
+}
