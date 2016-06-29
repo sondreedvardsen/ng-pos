@@ -1,3 +1,15 @@
+<md-tab-group>
+    <md-tab>
+        <template md-tab-label>Home</template>
+        <template md-tab-content>
+        </template>
+    </md-tab>
+    <div *ngFor="let cat of categories">
+        <md-tab *ngIf="cat.type == 'parent'">
+            <template md-tab-label>{{cat.name}}<a [routerLink]="['/category/', cat.id]"></a></template>
+        </md-tab>
+    </div>
+</md-tab-group>
 <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--3-col" *ngFor="let product of products">
         <md-card>

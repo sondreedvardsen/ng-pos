@@ -1,3 +1,6 @@
+md-tab-group {
+    min-height: initial;
+}
 md-card img {
     height: 120px;
     object-fit: cover;
