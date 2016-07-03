@@ -20,7 +20,7 @@ export class ProductsService {
         return arr || { };
     }
     getProducts(catId: number) : Observable<any> {
-        let url = 'https://mystore-api.no/products/' + catId + '.json?api_key=INTERIRGALLERIET-53A24AB7-41';
+        let url = 'https://mystore-api.no/products/' + catId + '.json?api_key=INTERIORAPI-C5AC97B2-41';
         return this.http.get(url)
                             .map(this.extractProdData)
                             .catch(this.handleError);
