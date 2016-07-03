@@ -51,6 +51,8 @@ var barrels = [
     'app/cart',
     'app/category/category',
     'app/category',
+    'app/category-nav',
+    'app/settings',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
