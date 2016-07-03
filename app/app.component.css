@@ -1,29 +1,9 @@
-md-sidenav-layout {
-    padding-right: 310px;
-}
 md-nav-list md-icon {
     color: #757575;
 }
 :host >>> md-content {
     height: 100%;
 }
-:host >>> md-tab-group .md-tab-header {
-    overflow-x: scroll;
-}
-:host >>> md-tab-group .md-tab-header::-webkit-scrollbar {
-    display: none;
-}
-:host >>> md-tab-group .md-tab-label {
-    min-width: 75px;
-    position: relative;
-}
-:host >>> md-tab-group .md-tab-label a {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-md-sidenav-layout.md-sidenav-opened {
-    z-index: 1;
+.toolbar-fill {
+    flex: 1 1 auto;
 }

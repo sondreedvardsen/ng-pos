@@ -30,13 +30,16 @@
         <button md-icon-button>
             <md-icon>search</md-icon>
         </button>
-        <button md-icon-button>
-            <md-icon>keyboard</md-icon>
-        </button>
+        <span class="toolbar-fill"></span>
         <button md-icon-button>
             <md-icon>receipt</md-icon>
         </button>
+        <button md-icon-button (click)="sidecart.toggle()">
+            <md-icon>shopping_cart</md-icon>
+        </button>
     </md-toolbar>
     <router-outlet></router-outlet>
+    <md-sidenav #sidecart align="end" mode="side" opened="true">
+        <app-cart></app-cart>
+    </md-sidenav>
 </md-sidenav-layout>
-<app-cart></app-cart>
