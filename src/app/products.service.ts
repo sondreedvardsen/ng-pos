@@ -7,7 +7,7 @@ export class ProductsService {
 
     constructor(private http: Http) {}
 
-    private catUrl = 'https://mystore-api.no/categories.json?api_key=INTERIRGALLERIET-53A24AB7-41';
+    private catUrl = 'https://mystore-api.no/categories.json?api_key=INTERIORAPI-C5AC97B2-41';
 
     getCategories() : Observable<any> {
         return this.http.get(this.catUrl)
