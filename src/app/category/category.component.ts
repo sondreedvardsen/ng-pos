@@ -4,6 +4,7 @@ import { ProductsService } from '../products.service';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
+import { CategoryNavComponent } from '../category-nav/category-nav.component';
 
 @Component({
     moduleId: module.id,
@@ -14,7 +15,8 @@ import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
         MD_CARD_DIRECTIVES,
         MdIcon,
         ROUTER_DIRECTIVES,
-        MD_TABS_DIRECTIVES
+        MD_TABS_DIRECTIVES,
+        CategoryNavComponent
     ],
     providers: [MdIconRegistry, ProductsService],
 })
@@ -53,8 +55,5 @@ export class CategoryComponent implements OnInit {
                 this.products = this.pCache[this.id];
             }
         });
-    }
-    CategoryNav(category) {
-        this.router.navigate(['/category', category.id]);
     }
 }
