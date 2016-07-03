@@ -7,9 +7,6 @@ md-nav-list md-icon {
 :host >>> md-content {
     height: 100%;
 }
-md-tab-group {
-    min-height: initial;
-}
 :host >>> md-tab-group .md-tab-header {
     overflow-x: scroll;
 }

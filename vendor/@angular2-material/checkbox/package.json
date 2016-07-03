@@ -2,51 +2,48 @@
   "_args": [
     [
       {
-        "raw": "@angular2-material/checkbox",
-        "scope": "@angular2-material",
-        "escapedName": "@angular2-material%2fcheckbox",
         "name": "@angular2-material/checkbox",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "raw": "@angular2-material/checkbox@2.0.0-alpha.6",
+        "rawSpec": "2.0.0-alpha.6",
+        "scope": "@angular2-material",
+        "spec": "2.0.0-alpha.6",
+        "type": "version"
       },
-      "/home/sondre/projects/ng-pos"
+      "C:\\Users\\Sondre\\Documents\\Projects\\ng-pos"
     ]
   ],
-  "_from": "@angular2-material/checkbox@latest",
-  "_id": "@angular2-material/checkbox@2.0.0-alpha.5-2",
+  "_from": "@angular2-material/checkbox@2.0.0-alpha.6",
+  "_id": "@angular2-material/checkbox@2.0.0-alpha.6",
   "_inCache": true,
   "_installable": true,
   "_location": "/@angular2-material/checkbox",
-  "_nodeVersion": "5.7.0",
+  "_nodeVersion": "4.1.2",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/checkbox-2.0.0-alpha.5-2.tgz_1464814625896_0.11895398539490998"
+    "tmp": "tmp/checkbox-2.0.0-alpha.6.tgz_1467300936895_0.9604847165755928"
   },
   "_npmUser": {
-    "name": "angular2-material",
-    "email": "angular-core+npm@google.com"
+    "email": "angular-core+npm@google.com",
+    "name": "angular2-material"
   },
-  "_npmVersion": "3.7.5",
+  "_npmVersion": "3.8.7",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "@angular2-material/checkbox",
-    "scope": "@angular2-material",
-    "escapedName": "@angular2-material%2fcheckbox",
     "name": "@angular2-material/checkbox",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "raw": "@angular2-material/checkbox@2.0.0-alpha.6",
+    "rawSpec": "2.0.0-alpha.6",
+    "scope": "@angular2-material",
+    "spec": "2.0.0-alpha.6",
+    "type": "version"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@angular2-material/checkbox/-/checkbox-2.0.0-alpha.5-2.tgz",
-  "_shasum": "cc568c10b5cab9a682846acc4e76cbbb038a396d",
+  "_resolved": "https://registry.npmjs.org/@angular2-material/checkbox/-/checkbox-2.0.0-alpha.6.tgz",
+  "_shasum": "bccd55d95adc8f576d586213b3866105f2f7511a",
   "_shrinkwrap": null,
-  "_spec": "@angular2-material/checkbox",
-  "_where": "/home/sondre/projects/ng-pos",
+  "_spec": "@angular2-material/checkbox@2.0.0-alpha.6",
+  "_where": "C:\\Users\\Sondre\\Documents\\Projects\\ng-pos",
   "bugs": {
     "url": "https://github.com/angular/material2/issues"
   },
@@ -55,8 +52,8 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "cc568c10b5cab9a682846acc4e76cbbb038a396d",
-    "tarball": "https://registry.npmjs.org/@angular2-material/checkbox/-/checkbox-2.0.0-alpha.5-2.tgz"
+    "shasum": "bccd55d95adc8f576d586213b3866105f2f7511a",
+    "tarball": "https://registry.npmjs.org/@angular2-material/checkbox/-/checkbox-2.0.0-alpha.6.tgz"
   },
   "homepage": "https://github.com/angular/material2#readme",
   "keywords": [
@@ -70,14 +67,15 @@
   "main": "./checkbox.js",
   "maintainers": [
     {
-      "name": "angular2-material",
-      "email": "angular-core+npm@google.com"
+      "email": "angular-core+npm@google.com",
+      "name": "angular2-material"
     }
   ],
   "name": "@angular2-material/checkbox",
   "optionalDependencies": {},
   "peerDependencies": {
-    "@angular2-material/core": "2.0.0-alpha.5-2"
+    "@angular/forms": "^0.1.0",
+    "@angular2-material/core": "2.0.0-alpha.6"
   },
   "readme": "ERROR: No README data found!",
   "repository": {
@@ -86,5 +84,5 @@
   },
   "scripts": {},
   "typings": "./checkbox.d.ts",
-  "version": "2.0.0-alpha.5-2"
+  "version": "2.0.0-alpha.6"
 }

@@ -2,51 +2,48 @@
   "_args": [
     [
       {
-        "raw": "@angular2-material/list",
-        "scope": "@angular2-material",
-        "escapedName": "@angular2-material%2flist",
         "name": "@angular2-material/list",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "raw": "@angular2-material/list@2.0.0-alpha.6",
+        "rawSpec": "2.0.0-alpha.6",
+        "scope": "@angular2-material",
+        "spec": "2.0.0-alpha.6",
+        "type": "version"
       },
-      "/home/sondre/projects/ng-pos"
+      "C:\\Users\\Sondre\\Documents\\Projects\\ng-pos"
     ]
   ],
-  "_from": "@angular2-material/list@latest",
-  "_id": "@angular2-material/list@2.0.0-alpha.5-2",
+  "_from": "@angular2-material/list@2.0.0-alpha.6",
+  "_id": "@angular2-material/list@2.0.0-alpha.6",
   "_inCache": true,
   "_installable": true,
   "_location": "/@angular2-material/list",
-  "_nodeVersion": "5.7.0",
+  "_nodeVersion": "4.1.2",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/list-2.0.0-alpha.5-2.tgz_1464814650686_0.5425850667525083"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/list-2.0.0-alpha.6.tgz_1467300951558_0.041606459999457"
   },
   "_npmUser": {
-    "name": "angular2-material",
-    "email": "angular-core+npm@google.com"
+    "email": "angular-core+npm@google.com",
+    "name": "angular2-material"
   },
-  "_npmVersion": "3.7.5",
+  "_npmVersion": "3.8.7",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "@angular2-material/list",
-    "scope": "@angular2-material",
-    "escapedName": "@angular2-material%2flist",
     "name": "@angular2-material/list",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "raw": "@angular2-material/list@2.0.0-alpha.6",
+    "rawSpec": "2.0.0-alpha.6",
+    "scope": "@angular2-material",
+    "spec": "2.0.0-alpha.6",
+    "type": "version"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@angular2-material/list/-/list-2.0.0-alpha.5-2.tgz",
-  "_shasum": "5eec8c4c3eceb67137cf78f776f514bf28e95956",
+  "_resolved": "https://registry.npmjs.org/@angular2-material/list/-/list-2.0.0-alpha.6.tgz",
+  "_shasum": "e6cf6159d10ba7c1ded46b2d8abf7cfb2982f0c9",
   "_shrinkwrap": null,
-  "_spec": "@angular2-material/list",
-  "_where": "/home/sondre/projects/ng-pos",
+  "_spec": "@angular2-material/list@2.0.0-alpha.6",
+  "_where": "C:\\Users\\Sondre\\Documents\\Projects\\ng-pos",
   "bugs": {
     "url": "https://github.com/angular/material2/issues"
   },
@@ -55,8 +52,8 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "5eec8c4c3eceb67137cf78f776f514bf28e95956",
-    "tarball": "https://registry.npmjs.org/@angular2-material/list/-/list-2.0.0-alpha.5-2.tgz"
+    "shasum": "e6cf6159d10ba7c1ded46b2d8abf7cfb2982f0c9",
+    "tarball": "https://registry.npmjs.org/@angular2-material/list/-/list-2.0.0-alpha.6.tgz"
   },
   "homepage": "https://github.com/angular/material2#readme",
   "keywords": [
@@ -70,14 +67,14 @@
   "main": "./list.js",
   "maintainers": [
     {
-      "name": "angular2-material",
-      "email": "angular-core+npm@google.com"
+      "email": "angular-core+npm@google.com",
+      "name": "angular2-material"
     }
   ],
   "name": "@angular2-material/list",
   "optionalDependencies": {},
   "peerDependencies": {
-    "@angular2-material/core": "2.0.0-alpha.5-2"
+    "@angular2-material/core": "2.0.0-alpha.6"
   },
   "readme": "ERROR: No README data found!",
   "repository": {
@@ -86,5 +83,5 @@
   },
   "scripts": {},
   "typings": "./list.d.ts",
-  "version": "2.0.0-alpha.5-2"
+  "version": "2.0.0-alpha.6"
 }

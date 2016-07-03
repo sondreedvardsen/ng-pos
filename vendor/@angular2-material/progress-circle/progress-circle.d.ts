@@ -1,9 +1,9 @@
-import { ChangeDetectorRef } from '@angular/core';
+import { ChangeDetectorRef, OnDestroy } from '@angular/core';
 export declare type ProgressCircleMode = 'determinate' | 'indeterminate';
 /**
  * <md-progress-circle> component.
  */
-export declare class MdProgressCircle {
+export declare class MdProgressCircle implements OnDestroy {
     private _changeDetectorRef;
     /** The id of the last requested animation. */
     private _lastAnimationId;
@@ -12,10 +12,12 @@ export declare class MdProgressCircle {
     /** The current path value, representing the progres circle. */
     private _currentPath;
     currentPath: string;
+    /** Clean up any animations that were running. */
+    ngOnDestroy(): void;
     /**
      * Value of the progress circle.
      *
-     * Input:number, defaults to 0.
+     * Input:number
      * _value is bound to the host as the attribute aria-valuenow.
      */
     private _value;

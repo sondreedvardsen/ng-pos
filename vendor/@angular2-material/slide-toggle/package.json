@@ -2,51 +2,48 @@
   "_args": [
     [
       {
-        "raw": "@angular2-material/slide-toggle",
-        "scope": "@angular2-material",
-        "escapedName": "@angular2-material%2fslide-toggle",
         "name": "@angular2-material/slide-toggle",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "raw": "@angular2-material/slide-toggle@2.0.0-alpha.6",
+        "rawSpec": "2.0.0-alpha.6",
+        "scope": "@angular2-material",
+        "spec": "2.0.0-alpha.6",
+        "type": "version"
       },
-      "/home/sondre/projects/ng-pos"
+      "C:\\Users\\Sondre\\Documents\\Projects\\ng-pos"
     ]
   ],
-  "_from": "@angular2-material/slide-toggle@latest",
-  "_id": "@angular2-material/slide-toggle@2.0.0-alpha.5-2",
+  "_from": "@angular2-material/slide-toggle@2.0.0-alpha.6",
+  "_id": "@angular2-material/slide-toggle@2.0.0-alpha.6",
   "_inCache": true,
   "_installable": true,
   "_location": "/@angular2-material/slide-toggle",
-  "_nodeVersion": "5.7.0",
+  "_nodeVersion": "4.1.2",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/slide-toggle-2.0.0-alpha.5-2.tgz_1464814674438_0.3337273374199867"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/slide-toggle-2.0.0-alpha.6.tgz_1467300968404_0.7355062097776681"
   },
   "_npmUser": {
-    "name": "angular2-material",
-    "email": "angular-core+npm@google.com"
+    "email": "angular-core+npm@google.com",
+    "name": "angular2-material"
   },
-  "_npmVersion": "3.7.5",
+  "_npmVersion": "3.8.7",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "@angular2-material/slide-toggle",
-    "scope": "@angular2-material",
-    "escapedName": "@angular2-material%2fslide-toggle",
     "name": "@angular2-material/slide-toggle",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "raw": "@angular2-material/slide-toggle@2.0.0-alpha.6",
+    "rawSpec": "2.0.0-alpha.6",
+    "scope": "@angular2-material",
+    "spec": "2.0.0-alpha.6",
+    "type": "version"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@angular2-material/slide-toggle/-/slide-toggle-2.0.0-alpha.5-2.tgz",
-  "_shasum": "a2c964583d0b9130472be33816995b19e8cb7d2e",
+  "_resolved": "https://registry.npmjs.org/@angular2-material/slide-toggle/-/slide-toggle-2.0.0-alpha.6.tgz",
+  "_shasum": "fc0d2aa9ecdfaf9b3539cd06b3e82488e1249a28",
   "_shrinkwrap": null,
-  "_spec": "@angular2-material/slide-toggle",
-  "_where": "/home/sondre/projects/ng-pos",
+  "_spec": "@angular2-material/slide-toggle@2.0.0-alpha.6",
+  "_where": "C:\\Users\\Sondre\\Documents\\Projects\\ng-pos",
   "bugs": {
     "url": "https://github.com/angular/material2/issues"
   },
@@ -55,8 +52,8 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "a2c964583d0b9130472be33816995b19e8cb7d2e",
-    "tarball": "https://registry.npmjs.org/@angular2-material/slide-toggle/-/slide-toggle-2.0.0-alpha.5-2.tgz"
+    "shasum": "fc0d2aa9ecdfaf9b3539cd06b3e82488e1249a28",
+    "tarball": "https://registry.npmjs.org/@angular2-material/slide-toggle/-/slide-toggle-2.0.0-alpha.6.tgz"
   },
   "homepage": "https://github.com/angular/material2#readme",
   "keywords": [
@@ -72,14 +69,15 @@
   "main": "./slide-toggle.js",
   "maintainers": [
     {
-      "name": "angular2-material",
-      "email": "angular-core+npm@google.com"
+      "email": "angular-core+npm@google.com",
+      "name": "angular2-material"
     }
   ],
   "name": "@angular2-material/slide-toggle",
   "optionalDependencies": {},
   "peerDependencies": {
-    "@angular2-material/core": "2.0.0-alpha.5-2"
+    "@angular/forms": "^0.1.0",
+    "@angular2-material/core": "2.0.0-alpha.6"
   },
   "readme": "ERROR: No README data found!",
   "repository": {
@@ -88,5 +86,5 @@
   },
   "scripts": {},
   "typings": "./slide-toggle.d.ts",
-  "version": "2.0.0-alpha.5-2"
+  "version": "2.0.0-alpha.6"
 }

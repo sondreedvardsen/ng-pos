@@ -22,16 +22,13 @@ md-grid-tile {
   position: absolute; }
   md-grid-tile figure {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: 100%;
@@ -44,11 +41,9 @@ md-grid-tile {
   md-grid-tile md-grid-tile-header,
   md-grid-tile md-grid-tile-footer {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     height: 48px;
@@ -81,12 +76,10 @@ md-grid-tile {
       height: 68px; }
   md-grid-tile .md-grid-list-text {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;

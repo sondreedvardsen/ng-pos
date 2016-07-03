@@ -1,5 +1,17 @@
 import { NgZone } from '@angular/core';
 import { MdTabLabel } from './tab-label';
+import { MdTabContent } from './tab-content';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+/** A simple change event emitted on focus or selection changes. */
+export declare class MdTabChangeEvent {
+    index: number;
+    tab: MdTab;
+}
+export declare class MdTab {
+    label: MdTabLabel;
+    content: MdTabContent;
+}
 /**
  * Material design tab-group component.  Supports basic tab pairs (label + content) and includes
  * animated ink-bar, keyboard navigation, and screen reader.
@@ -9,7 +21,15 @@ export declare class MdTabGroup {
     private _zone;
     private _labelWrappers;
     private _inkBar;
+    private _isInitialized;
+    private _selectedIndex;
     selectedIndex: number;
+    /** Output to enable support for two-way binding on `selectedIndex`. */
+    private _selectedIndexChange;
+    private _onFocusChange;
+    focusChange: Observable<MdTabChangeEvent>;
+    private _onSelectChange;
+    selectChange: Observable<MdTabChangeEvent>;
     private _focusIndex;
     private _groupId;
     constructor(_zone: NgZone);
@@ -29,9 +49,10 @@ export declare class MdTabGroup {
     /** Tracks which element has focus; used for keyboard navigation */
     /** When the focus index is set, we must manually send focus to the correct label */
     focusIndex: number;
+    private _createChangeEvent(index);
     /** Increment the focus index by 1; prevent going over the number of tabs */
     focusNextTab(): void;
     /** Decrement the focus index by 1; prevent going below 0 */
     focusPreviousTab(): void;
 }
-export declare const MD_TABS_DIRECTIVES: (typeof MdTabGroup | typeof MdTabLabel)[];
+export declare const MD_TABS_DIRECTIVES: (typeof MdTabGroup | typeof MdTabLabel | typeof MdTab)[];
