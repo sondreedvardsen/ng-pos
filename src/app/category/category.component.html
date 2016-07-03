@@ -1,5 +1,6 @@
 <app-category-nav></app-category-nav>
-<div class="mdl-grid">
+<h1 *ngIf="!id">{{products}}</h1>
+<div class="mdl-grid" *ngIf="id">
     <div class="mdl-cell mdl-cell--3-col" *ngFor="let product of products">
         <md-card>
             <img md-card-image src="{{product.products_images[0]}}">

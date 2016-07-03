@@ -7,7 +7,9 @@ import { MD_TOOLBAR_DIRECTIVES } from '@angular2-material/toolbar';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { CartComponent } from './cart/cart.component';
 import { CategoryComponent } from './category/category.component';
+import { SettingsComponent } from './settings/settings.component';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import { FORM_DIRECTIVES } from '@angular/forms';
 
 @Component({
   moduleId: module.id,
@@ -21,7 +23,9 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
       MD_SIDENAV_DIRECTIVES,
       MD_TOOLBAR_DIRECTIVES,
       MdIcon,
+      FORM_DIRECTIVES,
       CartComponent,
+      SettingsComponent,
       ROUTER_DIRECTIVES
   ],
   providers: [MdIconRegistry]

@@ -23,7 +23,7 @@ import { CategoryNavComponent } from '../category-nav/category-nav.component';
 export class CategoryComponent implements OnInit {
 
     private sub: any;
-    private id: number;
+    private id: any;
     private categories: any;
     private products: any;
     private pCache = {};
@@ -42,17 +42,22 @@ export class CategoryComponent implements OnInit {
             );
 
         this.sub = this.route.params.subscribe(params => {
-            this.id = +params['id'];
-            this.productsservice.getProducts(this.id)
-                .subscribe(
-                    data => {
-                        this.products = data;
-                        this.pCache[this.id] = data;
-                    },
-                    err => console.error(err)
-                );
-            if(this.pCache[this.id]) {
-                this.products = this.pCache[this.id];
+            this.id = params['id'];
+            if(this.id) {
+                this.productsservice.getProducts(this.id)
+                    .subscribe(
+                        data => {
+                            this.products = data;
+                            this.pCache[this.id] = data;
+                        },
+                        err => console.error(err)
+                    );
+                if(this.pCache[this.id]) {
+                    this.products = this.pCache[this.id];
+                }
+            }
+            else {
+                this.products = 'Forsiden';
             }
         });
     }
