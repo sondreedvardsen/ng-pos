@@ -54,5 +54,7 @@ export class CategoryComponent implements OnInit {
             }
         });
     }
-
+    CategoryNav(category) {
+        this.router.navigate(['/category', category.id]);
+    }
 }
