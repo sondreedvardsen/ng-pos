@@ -1,10 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ROUTER_DIRECTIVES, Router, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../products.service';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
-import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
-import { CategoryNavComponent } from '../category-nav/category-nav.component';
+import 'rxjs/add/operator/switchMap';
 
 @Component({
     moduleId: module.id,
@@ -13,18 +12,14 @@ import { CategoryNavComponent } from '../category-nav/category-nav.component';
     styleUrls: ['category.component.css'],
     directives: [
         MD_CARD_DIRECTIVES,
-        MdIcon,
-        ROUTER_DIRECTIVES,
-        MD_TABS_DIRECTIVES,
-        CategoryNavComponent
+        MdIcon
     ],
-    providers: [MdIconRegistry, ProductsService],
+    providers: [MdIconRegistry],
 })
 export class CategoryComponent implements OnInit {
 
     private sub: any;
     private id: any;
-    private categories: any;
     private products: any;
     private pCache = {};
 
@@ -35,29 +30,19 @@ export class CategoryComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-        this.productsservice.getCategories()
-            .subscribe(
-                data => this.categories = data,
-                err => console.error(err)
-            );
 
         this.sub = this.route.params.subscribe(params => {
-            this.id = params['id'];
-            if(this.id) {
-                this.productsservice.getProducts(this.id)
-                    .subscribe(
-                        data => {
-                            this.products = data;
-                            this.pCache[this.id] = data;
-                        },
-                        err => console.error(err)
-                    );
-                if(this.pCache[this.id]) {
-                    this.products = this.pCache[this.id];
-                }
-            }
-            else {
-                this.products = 'Forsiden';
+            this.id = +params['id'];
+            this.productsservice.getProducts(this.id)
+                .subscribe(
+                    data => {
+                        this.products = data;
+                        this.pCache[this.id] = data;
+                    },
+                    err => console.error(err)
+                );
+            if(this.pCache[this.id]) {
+                this.products = this.pCache[this.id];
             }
         });
     }

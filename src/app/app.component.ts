@@ -10,6 +10,7 @@ import { CategoryComponent } from './category/category.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import { FORM_DIRECTIVES } from '@angular/forms';
+import { ProductsService } from './products.service';
 
 @Component({
   moduleId: module.id,
@@ -28,7 +29,7 @@ import { FORM_DIRECTIVES } from '@angular/forms';
       SettingsComponent,
       ROUTER_DIRECTIVES
   ],
-  providers: [MdIconRegistry]
+  providers: [MdIconRegistry, ProductsService]
 })
 
 export class AppComponent implements OnInit {
