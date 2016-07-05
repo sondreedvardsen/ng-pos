@@ -39,6 +39,7 @@ var barrels = [
     '@angular/core',
     '@angular/common',
     '@angular/compiler',
+    '@angular/forms',
     '@angular/http',
     '@angular/router',
     '@angular/platform-browser',
@@ -53,6 +54,8 @@ var barrels = [
     'app/category',
     'app/category-nav',
     'app/settings',
+    'app/dashboard',
+    'app/products',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

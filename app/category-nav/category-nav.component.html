@@ -1,12 +1,13 @@
 <md-tab-group>
     <md-tab>
-        <template md-tab-label><a [routerLink]="['/category']">Home</a></template>
+        <template md-tab-label><a [routerLink]="['/category']">Forside</a></template>
         <template md-tab-content>
         </template>
     </md-tab>
-    <div *ngFor="let cat of categories">
-        <md-tab *ngIf="cat.type == 'parent'">
-            <template md-tab-label><a [routerLink]="['/category', cat.id]">{{cat.name}}</a></template>
+    <div *ngFor="let category of categories">
+        <md-tab *ngIf="category.type == 'parent'">
+            <template md-tab-label><a [routerLink]="['/category', category.id]">{{category.name}}</a></template>
         </md-tab>
     </div>
 </md-tab-group>
+<router-outlet></router-outlet>
