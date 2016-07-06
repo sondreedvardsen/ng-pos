@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../products.service';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/switchMap';
 
 @Component({
@@ -19,9 +20,8 @@ import 'rxjs/add/operator/switchMap';
 export class CategoryComponent implements OnInit {
 
     private sub: any;
-    private id: any;
+    private id: number;
     private products: any;
-    private pCache = {};
 
     constructor(
         private route: ActivatedRoute,
@@ -30,20 +30,10 @@ export class CategoryComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-
-        this.sub = this.route.params.subscribe(params => {
-            this.id = +params['id'];
-            this.productsservice.getProducts(this.id)
-                .subscribe(
-                    data => {
-                        this.products = data;
-                        this.pCache[this.id] = data;
-                    },
-                    err => console.error(err)
-                );
-            if(this.pCache[this.id]) {
-                this.products = this.pCache[this.id];
-            }
-        });
+        this.sub = this.route.params
+            .switchMap(params => this.productsservice.getProducts(+params['id']))
+            .subscribe(
+                data => this.products = data,
+                err => console.error(err));
     }
 }
