@@ -16,7 +16,7 @@ import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
       ROUTER_DIRECTIVES,
       MD_TABS_DIRECTIVES
   ],
-  providers: [MdIconRegistry, ProductsService]
+  providers: [MdIconRegistry]
 })
 export class CategoryNavComponent implements OnInit {
 

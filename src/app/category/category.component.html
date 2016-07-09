@@ -1,6 +1,6 @@
 <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--3-col" *ngFor="let product of products">
-        <md-card>
+        <md-card (click)="addToCart(product.products_id)">
             <img md-card-image src="{{product.products_images[0]}}">
             <md-icon *ngIf="!product.products_images">photo</md-icon>
             <md-card-title>{{product.products_name}}</md-card-title>

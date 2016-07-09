@@ -39,7 +39,6 @@ export class AppComponent implements OnInit {
     title = 'Angular2 test!';
 
     ngOnInit() {
-
     }
 
 }

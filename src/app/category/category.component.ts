@@ -36,4 +36,8 @@ export class CategoryComponent implements OnInit {
                 data => this.products = data,
                 err => console.error(err));
     }
+
+    addToCart(id) {
+        console.log('Add '+id+' to cart!');
+    }
 }
