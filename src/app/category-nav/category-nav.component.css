@@ -16,4 +16,6 @@ md-tab-group {
     display: block;
     padding: 0 12px;
     text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
 }

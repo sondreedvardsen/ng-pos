@@ -6,7 +6,7 @@
     </md-tab>
     <div *ngFor="let category of categories">
         <md-tab *ngIf="category.type == 'parent'">
-            <template md-tab-label><a [routerLink]="['/category', category.id]">{{category.name}}</a></template>
+            <template md-tab-label><a [routerLink]="['/category', category.id]">{{category.name | truncate:'8':'...'}}</a></template>
         </md-tab>
     </div>
 </md-tab-group>

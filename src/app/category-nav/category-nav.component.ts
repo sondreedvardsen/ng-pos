@@ -4,6 +4,7 @@ import { ProductsService } from '../products.service';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
+import { TruncatePipe } from '../truncate.pipe';
 
 @Component({
   moduleId: module.id,
@@ -16,7 +17,8 @@ import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
       ROUTER_DIRECTIVES,
       MD_TABS_DIRECTIVES
   ],
-  providers: [MdIconRegistry]
+  providers: [MdIconRegistry],
+  pipes: [TruncatePipe]
 })
 export class CategoryNavComponent implements OnInit {
 
