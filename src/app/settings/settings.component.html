@@ -4,19 +4,21 @@
                 <template md-tab-content>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--12-col">
-                            <md-card>
-                                <md-list>
-                                    <md-list-item>
-                                        <h4 md-line>Automatisk kvitteringsutskrift</h4>
-                                        <p md-line>Aktiver for å skrive ut kvittering automatisk etter kjøp.</p>
-                                        <md-slide-toggle></md-slide-toggle>
-                                    </md-list-item>
-                                    <md-list-item>
-                                        <h4 md-line>asdasd</h4>
-                                        <p md-line>asdasd</p>
-                                    </md-list-item>
-                                </md-list>
-                            </md-card>
+                            <form #settingsForm="ngForm">
+                                <md-card>
+                                    <md-list>
+                                        <md-list-item>
+                                            <h4 md-line>Automatisk kvitteringsutskrift</h4>
+                                            <p md-line>Aktiver for å skrive ut kvittering automatisk etter kjøp.</p>
+                                            <md-slide-toggle></md-slide-toggle>
+                                        </md-list-item>
+                                        <md-list-item>
+                                            <h4 md-line>asdasd</h4>
+                                            <p md-line>asdasd</p>
+                                        </md-list-item>
+                                    </md-list>
+                                </md-card>
+                            </form>
                         </div>
                     </div>
                 </template>

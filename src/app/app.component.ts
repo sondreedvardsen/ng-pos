@@ -11,6 +11,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import { FORM_DIRECTIVES } from '@angular/forms';
 import { ProductsService } from './products.service';
+import { SettingsService } from './settings.service';
 
 @Component({
   moduleId: module.id,
@@ -29,7 +30,7 @@ import { ProductsService } from './products.service';
       SettingsComponent,
       ROUTER_DIRECTIVES
   ],
-  providers: [MdIconRegistry, ProductsService]
+  providers: [MdIconRegistry, ProductsService, SettingsService]
 })
 
 export class AppComponent implements OnInit {

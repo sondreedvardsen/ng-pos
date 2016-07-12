@@ -5,6 +5,7 @@ import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/switchMap';
+import { PricePipe } from '../price.pipe';
 
 @Component({
     moduleId: module.id,
@@ -16,6 +17,7 @@ import 'rxjs/add/operator/switchMap';
         MdIcon
     ],
     providers: [MdIconRegistry],
+    pipes: [PricePipe]
 })
 export class CategoryComponent implements OnInit {
 

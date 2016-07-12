@@ -4,6 +4,7 @@ import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
 import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
 import { MdButton } from '@angular2-material/button';
 import { MD_SLIDE_TOGGLE_DIRECTIVES } from '@angular2-material/slide-toggle';
+import { SettingsService } from '../settings.service';
 
 @Component({
     moduleId: module.id,
@@ -20,10 +21,7 @@ import { MD_SLIDE_TOGGLE_DIRECTIVES } from '@angular2-material/slide-toggle';
 })
 export class SettingsComponent implements OnInit {
 
-    private settings: Object;
-    private featProducts: Object;
-
-    constructor() {}
+    constructor(private settings: SettingsService) {}
 
     ngOnInit() {
     }
