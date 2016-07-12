@@ -15,6 +15,7 @@ export class ProductsService {
     private _dataObs = new ReplaySubject<any>(1);
     private _catObs = new ReplaySubject<any>(1);
     private _prodObs = new Array();
+    private allProds;
 
     getData(forceRefresh?: boolean) : Observable<any> {
         // On Error the Subject will be Stoped and Unsubscribed, if so, create another one
@@ -63,6 +64,11 @@ export class ProductsService {
         let body = res.json();
         let arr = Object.keys(body.data.product_data).map(function(k) { return body.data.product_data[k] });
         return arr || { };
+    }
+    getAllProducts() : Observable<any> {
+        let url = 'https://mystore-api.no/products.json?api_key=INTERIORAPI-C5AC97B2-41&page_size=250';
+        return this.http.get(url)
+                        .map(this.extractProdData);
     }
     private handleError (error: any) {
     // In a real world app, we might use a remote logging infrastructure

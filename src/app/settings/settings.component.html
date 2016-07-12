@@ -4,7 +4,7 @@
                 <template md-tab-content>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--12-col">
-                            <form #settingsForm="ngForm">
+                            <form [formGroup]="form">
                                 <md-card>
                                     <md-list>
                                         <md-list-item>
@@ -13,8 +13,14 @@
                                             <md-slide-toggle></md-slide-toggle>
                                         </md-list-item>
                                         <md-list-item>
-                                            <h4 md-line>asdasd</h4>
-                                            <p md-line>asdasd</p>
+                                            <h4 md-line>Vis desimaler</h4>
+                                            <p md-line>Vis desimaler i priser</p>
+                                            <md-slide-toggle formControlName="decimals"></md-slide-toggle>
+                                        </md-list-item>
+                                        <md-list-item>
+                                            <h4 md-line>Vis null-desimaler</h4>
+                                            <p md-line>Vis desimaler når beløp er hel krone</p>
+                                            <md-slide-toggle formControlName="dispzero"></md-slide-toggle>
                                         </md-list-item>
                                     </md-list>
                                 </md-card>
