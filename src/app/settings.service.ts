@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Settings } from './settings';
+import { Settingz } from './settingz';
 
 @Injectable()
 export class SettingsService {
@@ -19,6 +19,7 @@ export class SettingsService {
                                 };
                                 // new Settings() will throw, but why!? :(((
         }
+        this.settingsObj = new Settingz();
         return Observable.of(this.settingsObj);
     }
 
