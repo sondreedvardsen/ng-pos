@@ -1,3 +1,9 @@
 export class Settings {
-    test: boolean;
+    decimals: boolean;
+    dispzero: boolean;
+
+    constructor() {
+        this.decimals = false;
+        this.dispzero = false;
+    }
 }

@@ -1,15 +1,24 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+import { Settings } from './settings';
 
 @Injectable()
 export class SettingsService {
 
+    private settingsObj;
+
     constructor() {}
 
-    private settingsObj: Object;
 
     getSettings() : Observable<Object> {
         this.settingsObj = JSON.parse(localStorage.getItem('settings'));
+        if(!this.settingsObj) {
+            this.settingsObj = {
+                                    "decimals": false,
+                                    "dispzero": false
+                                };
+                                // new Settings() will throw, but why!? :(((
+        }
         return Observable.of(this.settingsObj);
     }
 

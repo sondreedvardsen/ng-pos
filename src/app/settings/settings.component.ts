@@ -25,7 +25,7 @@ import { Settings } from '../settings';
 export class SettingsComponent implements OnInit {
 
     private form: FormGroup;
-    private set: Object;
+    private set: Settings;
 
     constructor(private settings: SettingsService, private fb: FormBuilder) {
         this.settings.getSettings().subscribe(data => this.set = data);
