@@ -1,4 +1,4 @@
-export class Settings {
+export class Settingz {
     decimals: boolean;
     dispzero: boolean;
 

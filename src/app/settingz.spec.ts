@@ -6,10 +6,10 @@ import {
   expect, it, xit,
   async, inject
 } from '@angular/core/testing';
-import {Settings} from './settings';
+import {Settingz} from './settingz';
 
-describe('Settings', () => {
+describe('Settingz', () => {
   it('should create an instance', () => {
-    expect(new Settings()).toBeTruthy();
+    expect(new Settingz()).toBeTruthy();
   });
 });

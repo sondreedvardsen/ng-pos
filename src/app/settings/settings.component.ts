@@ -6,7 +6,6 @@ import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs';
 import { MdButton } from '@angular2-material/button';
 import { MD_SLIDE_TOGGLE_DIRECTIVES } from '@angular2-material/slide-toggle';
 import { SettingsService } from '../settings.service';
-import { Settings } from '../settings';
 
 @Component({
     moduleId: module.id,
@@ -25,10 +24,12 @@ import { Settings } from '../settings';
 export class SettingsComponent implements OnInit {
 
     private form: FormGroup;
-    private set: Settings;
+    private set: Object;
 
     constructor(private settings: SettingsService, private fb: FormBuilder) {
-        this.settings.getSettings().subscribe(data => this.set = data);
+        // this.settings.getSettings().subscribe(data => this.set = data);
+        this.settings.getSettings();
+        this.set = { decimals: 0, dispzero: 0 }
         this.form = fb.group({
                                 "decimals": this.set['decimals'],
                                 "dispzero": this.set['dispzero']
