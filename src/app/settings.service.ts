@@ -5,21 +5,14 @@ import { Settingz } from './settingz';
 @Injectable()
 export class SettingsService {
 
-    private settingsObj;
+    private settingsObj: Settingz;
 
     constructor() {}
 
 
-    getSettings() : Observable<Object> {
+    getSettings() : Observable<Settingz> {
         this.settingsObj = JSON.parse(localStorage.getItem('settings'));
-        if(!this.settingsObj) {
-            this.settingsObj = {
-                                    "decimals": false,
-                                    "dispzero": false
-                                };
-                                // new Settings() will throw, but why!? :(((
-        }
-        this.settingsObj = new Settingz();
+        this.settingsObj = !this.settingsObj ? new Settingz() : this.settingsObj;
         return Observable.of(this.settingsObj);
     }
 

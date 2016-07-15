@@ -8,7 +8,7 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { CartComponent } from './cart/cart.component';
 import { CategoryComponent } from './category/category.component';
 import { SettingsComponent } from './settings/settings.component';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { ROUTER_DIRECTIVES, Router, ActivatedRoute } from '@angular/router';
 import { FORM_DIRECTIVES } from '@angular/forms';
 import { ProductsService } from './products.service';
 import { SettingsService } from './settings.service';
@@ -35,11 +35,17 @@ import { SettingsService } from './settings.service';
 
 export class AppComponent implements OnInit {
 
-    constructor() {}
+    constructor(private productsservice: ProductsService,
+        private route: ActivatedRoute,
+        private router: Router) {}
 
     title = 'Angular2 test!';
 
     ngOnInit() {
+    }
+
+    refresh() {
+        this.productsservice.clearCache();
     }
 
 }
